@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>NetEye Setup</title>
+</head>
+
+<body>
+Net Eye designed by 
+<ul>
+<font color=green>
+<li>     Muhammad Naeem (naeem@email.com)       (R)92-51-4433969
+</font>
+</ul>
+<table align=center><tr><td>
+ <img src=NetEye.gif Alt="NetEye">
+</td></tr></table>
+
+<p>
+Net Eye lets you watch online Screen of the monitor of any computer within your intranet (LAN).
+Program captures the screenshot of the computer and sends it to your computer so You are able to monitor what the remote pc user is doing on computer at real time.--------
+<p> 
+keystrokes, passwords, usernames, confidential information, invoking applications remotely, Capturing Mouse , Swaping Mouse Buttons, shut-down/log off/restarting and even tracking all MOUSE movements!
+Works stealthy and invisibly to user. Real time watching the screen of the monitor of your Local Area Network in the same domain
+<p>
+and more to all of this application has quite a different & eye capturing "USER INTERFACE"
+
+<table align=center><tr><td>
+  <img src=NetEye_Messaging.gif Alt='Send Message to Remote Machine'>
+</td></tr></table>
+
+<p> 
+Installation Notes
+<ul>
+<li> Install Client Part over the machine (Windows 2000Adv Server working as Domain Controller ) intended to be used by Network Admin/ Application user
+
+<li>Simply copy these three files (Server folder)into the machine (running Windows2000 in the above mentioned domain as workstation) which you   want to monitor.Use Domin's Administrator Account during this process
+   after copying Server part. run dcomcnfg utility at command prompt. configure following three components accordingly
+</ul>
+
+*******************   NetEye.Caller    ************************<br>
+<font color=red>Security:-</font> <b>use custon access permission:-</b><br>
+             add all user of the domain and local system (the best way is to add "everyone" from the local system account and "domain users" from the domain controller machine )<br>
+	   <b>use custom launch permission:-</b>	<br>
+	     same as above<br>
+
+keep all of the rest setting without any change.<br>
+
+<p>
+********************    NetEye.Serializer     ***************************<br>
+
+<font color=red>Security:-</font> Same as above<br>
+
+keep all of the rest setting without any change.<br>
+
+<p>
+*********************         NetEye.Daemon       *********************<br>
+
+<font color=red>Security:-</font> Same as above<br>
+<font color=red>Identity:-</font> The interactive user <br>
+
+keep all of the rest setting without any change.<br>
+************************************************************************<br>
+now it is better to reboot the machine.<br>
+
+<p>
+To get the help running the NetEye system Press F1 key (a file named NetEye.chm is located in the root directory )
+<br>
+To run the Client part of the application you will require login and password which are <br>
+<font color=teal>login:-     net	<br>
+Password:-  eye </font><br>
+
+<table align=center><tr><td> 
+  <img src=NetEye_Authors.gif Alt="NetEye Authors">
+</td></tr></table>
+<hr color=tan>
+
+</body>
+</html>
